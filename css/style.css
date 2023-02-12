@@ -8,7 +8,7 @@
 }
 
 body {
-  background: rgb(177, 183, 185);
+  background: rgb(195, 216, 223);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,7 +77,7 @@ body {
   font-weight: 300;
 }
 
-.contactinfo {
+.contact {
   padding-top: 40px;
 }
 
@@ -89,57 +89,57 @@ body {
   margin-bottom: 20px;
 }
 
-.contactinfo ul {
+.contact ul {
   position: relative;
 }
 
-.contactinfo ul li {
+.contact ul li {
   position: relative;
   list-style: none;
   margin: 10px 0;
   cursor: pointer;
 }
 
-.contactinfo ul li .icon {
+.contact ul li .icon {
   display: inline-block;
   width: 30px;
   font-size: 18px;
   color: rgb(41, 146, 146);
 }
 
-.contactinfo ul li span {
+.contact ul li span {
   color: #fff;
   font-weight: 300;
 }
-.contactinfo ul li span a{
+.contact ul li span a {
   color: #fff;
   font-weight: 300;
 }
 
-.contactinfo.education li {
-    margin-bottom: 15px;
+.contact.training li {
+  margin-bottom: 15px;
 }
-.contactinfo.education li h5 {
-    color: rgb(41, 146, 146);
-    font-weight: 500;
-}
-
-.contactinfo.education h4{
-    color: #fff;
-    font-weight: 300;
+.contact.training li h5 {
+  color: rgb(41, 146, 146);
+  font-weight: 500;
 }
 
-.contactinfo.education ul li span {
+.contact.training h4 {
+  color: #fff;
+  font-weight: 300;
+}
+
+.contact.training ul li span {
   color: #fff;
   font-weight: 100;
   font-style: italic;
   font-size: 0.9em;
 }
 
-.about {
+.content {
   margin-bottom: 50px;
 }
-.about:last-child {
+.content:last-child {
   margin-bottom: 0;
 }
 
@@ -154,22 +154,22 @@ p {
   color: #333;
 }
 
-.about .box {
+.content .box {
   display: flex;
   flex-direction: column;
   margin: 20px 0;
 }
-.about .box .year_company {
+.content .box .year_company {
   min-width: 150px;
 }
 
-.about .box .year_company h5 {
+.content .box .year_company h5 {
   text-transform: uppercase;
   color: #848c90;
   font-weight: 600;
 }
 
-.about .box .text h4 {
+.content .box .text h4 {
   text-transform: uppercase;
   color: #2a7da2;
   font-size: 16px;
@@ -179,7 +179,8 @@ p {
   position: relative;
   width: 100%;
   display: grid;
-  grid-template-columns: 150px 1fr;
+  /* grid-template-columns: 150px 1fr; */
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
 }
@@ -189,10 +190,13 @@ p {
   color: #848c90;
   font-weight: 500;
 }
+.softskills .box h4 {
+  font-weight: 300;
+}
 
 .interest ul {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .interest ul li {
@@ -200,6 +204,15 @@ p {
   color: #333;
   font-weight: 500;
   margin: 10px 0;
+}
+
+.interest img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  color: rgb(41, 146, 146);
+  margin-right: 10px;
 }
 /* 
 .interest ul li fa{
@@ -219,18 +232,17 @@ p {
   }
 }
 @media (max-width: 768px) {
-  .about .box {
+  .content .box {
     flex-direction: column;
   }
 
-  .about .box .year_company {
+  .content .box .year_company {
     margin-bottom: 5px;
   }
   .interest ul {
     grid-template-columns: repeat(1, 1fr);
-}
-.skills .box{
-    
+  }
+  .skills .box {
     grid-template-columns: repeat(1, 1fr);
   }
 }
