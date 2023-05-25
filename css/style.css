@@ -182,7 +182,7 @@ p {
   /* grid-template-columns: 150px 1fr; */
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  align-items: center;
+  align-items:flex-start;
 }
 
 .skills .box h4 {
@@ -191,7 +191,7 @@ p {
   font-weight: 500;
 }
 .softskills .box h4 {
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .interest ul {
